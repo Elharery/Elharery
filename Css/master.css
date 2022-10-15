@@ -81,11 +81,11 @@ body
             background-color: #f1f5f9;
       }
 /* End New */
-/* Start  */
+/* Start Header */
 .page .header{
-      width: 80%;
-      margin-left: 100px;
-      margin-right: 100px;
+      width: 100%;
+      /* margin-left: 100px;
+      margin-right: 100px; */
       border-radius: 10px;
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
@@ -94,14 +94,31 @@ body
 }
 .page .header > div{
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
+      padding-left: 10px;
+      padding-right: 10px;
 }
 ul{
       display: flex;
 }
 .page .header ul a:not(:first-of-type){
-      padding-left: 15px;
+      /* padding-left: 15px; */
+}
+.page .header ul a.active{
+
+      margin-right: 10px;
+}
+.page .header ul a.tow{
+      margin-right: 5px;
+}
+.page .header ul a{
+      padding: 10px;
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
 }
 .page .header ul a.active{
       background-color: var(--blue-color);
@@ -112,11 +129,101 @@ ul{
       -ms-border-radius: 6px;
       -o-border-radius: 6px;
 }
+.page .header ul a:hover{
+      /*padding: 15px;
+      */transition: .4s;
+      background-color: var(--blue-color);
+      color: #fff;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+      -webkit-transition: .4s;
+      -moz-transition: .4s;
+      -ms-transition: .4s;
+      -o-transition: .4s;
+}
 .page .header ul a{
       padding: 5px;
 }
+/* End Header */
+/* Start My Info */
+.page .for-me{
+display: flex;
+/* flex-direction: column; */
+      background-image: url(../imgs/);
+      background-color: #000;
+      justify-content: center;
+      position: relative;
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      /* margin-top: -20px; */
+}
+.page .for-me .info .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -15px;
+}
+.page .for-me .info .icon .color-i{
+      padding-left: 10px;
+}
+.page .for-me .info .icon .color-i{
+      color: #fff;
+}
+.page .for-me .info .icon a{
+      font-size: 30px;
+      transition: .4s;
+      -webkit-transition: .4s;
+      -moz-transition: .4s;
+      -ms-transition: .4s;
+      -o-transition: .4s;
+}
+.page .for-me .info .icon .a-face:hover{
+      color: var(--blue-color);
+}
+.page .for-me .info .icon .a-ins:hover{
+      color: var(--red-color);
+}
+.page .for-me .info .icon .a-git:hover{
+      color: var(--orange-color);
+}
+.page .for-me .info p,
+      .page .for-me h2{
+            color: #fff;
+      }
+.page .for-me .info p{
+      width: 310px;
+      font-weight: 600;
+      text-align: center;
+      line-height: 1.8;
+      /* display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; */
+}
+.page .for-me .info p span{
+      color: var(--green-color);
+}
+.page .for-me h2{
+      position: relative;
+      text-align: center;
+      margin-left: 15px;
+      /* left: 35%; */
+}
+/* End My Info */
 /* Media */
-@media (max-width:320px){}
+@media (max-width:320px){
+      .page .header > div{
+            padding-left: 0;
+            padding-right: 0;
+      }
+      .page .header .side{
+            margin-left: -20px;
+      }
+}
 @media (max-width:375px){}
 @media (max-width:425px){
       .page .header{
@@ -127,4 +234,36 @@ ul{
       .page .header .info{
             padding-left: 5px;
       }
+                        .page .for-me .info {
+                              transform: translateY(20%);
+                              -webkit-transform: translateY(20%);
+                              -moz-transform: translateY(20%);
+                              -ms-transform: translateY(20%);
+                              -o-transform: translateY(20%);
 }
+}
+@media (min-width: 767px){
+      .page .for-me .info{
+            transform: translateY(25%);
+            -webkit-transform: translateY(25%);
+            -moz-transform: translateY(25%);
+            -ms-transform: translateY(25%);
+            -o-transform: translateY(25%);
+}
+}
+/* @media (max-width: 768px){
+      .page .for-me .info h2{
+            left: 0;
+      }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+      .page .for-me .info h2{
+            left: 0;
+      }
+      
+}
+@media (min-width: 1025px){
+      .page .for-me .info h2{
+            left: 0;
+      }
+} */
