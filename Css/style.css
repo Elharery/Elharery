@@ -1,0 +1,120 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* class */
+
+.float-left{
+    float: left;
+}
+/* Start Header */
+@media (min-width:768px) {
+    .header i{
+        visibility:hidden; 
+    }
+    .header .logo{
+        padding-top: 10px;
+    }
+        .header ul li {
+            display: inline-block;
+        }
+        .header{
+            height: 50px;
+        }
+    }
+@media (min-width:768px) and (max-width:992px) {
+.header ul{
+    left: 0px;
+    top: -45px;
+}
+}
+@media (min-width:993px)  {
+.header ul{
+    left: 0px;
+    top: -45px;
+}
+/* .header{
+    height: 50px;
+} */
+    }
+    @media (max-width:767px) {
+        .header ul{
+            display: none;
+        }
+        .header{
+            height: auto;
+        }
+        .header .logo{
+            padding-top: 2px;
+        }
+}
+    .header {
+        background-color: royalblue;
+        display: flex;
+        justify-content:space-between;
+    }
+    .header .logo{
+/* padding-top: 10px; */
+    text-indent: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    }
+    .header i{
+            font-size: 30px;
+                position: relative;
+                left: -10%;
+                /* display: none; */
+                /* visibility: hidden; */
+    }
+    .header .links:hover  ul {
+            display: block;
+    }
+    .header ul{
+        list-style: none;
+        position: relative;
+        right: 140px;
+        /* display: block; */
+    }
+    .header ul li{
+        /* display: inline-block; */
+        padding: 10px;
+    }
+    .header ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    /* Start content */
+        .content .about{
+            background-color: #eee;
+            height: calc(100vh - 30px); 
+        }
+        .content .about > h2{
+            text-align: center;
+            padding-top: 50px;
+            font-size: 40px;
+            color: #aba8a817;
+            font-weight: 900;
+        }
+        .content .about .box-one{
+    height: 170px;
+    background-color: #fff;
+    width: 80%;
+    margin-left: 10%;
+        }
+                .content .about .box-one img{
+                    border-radius: 5px;
+                }
+        .content .about .box-one span{
+            cursor: pointer;
+            font-weight: 200;
+        }

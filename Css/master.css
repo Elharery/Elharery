@@ -152,14 +152,19 @@ ul{
 .page .for-me{
 display: flex;
 /* flex-direction: column; */
-      background-image: url(../imgs/);
-      background-color: #000;
+      background-image: url(../imgs/img-1.webp);
+      /* background-color: #000; */
       justify-content: center;
       position: relative;
       background-size: cover;
       background-repeat: no-repeat;
       min-height: 100vh;
       /* margin-top: -20px; */
+}
+/* .page .for-me .info .icon i { */
+.page .for-me .info h2,
+.page .for-me .info .pp{
+      color: #000;
 }
 .page .for-me .info .icon {
       display: flex;
@@ -171,7 +176,7 @@ display: flex;
       padding-left: 10px;
 }
 .page .for-me .info .icon .color-i{
-      color: #fff;
+      /* color: #fff; */
 }
 .page .for-me .info .icon a{
       font-size: 30px;
@@ -183,6 +188,7 @@ display: flex;
 }
 .page .for-me .info .icon .a-face:hover{
       color: var(--blue-color);
+      
 }
 .page .for-me .info .icon .a-ins:hover{
       color: var(--red-color);
@@ -194,6 +200,9 @@ display: flex;
       .page .for-me h2{
             color: #fff;
       }
+                        .page .for-me h2 {
+                              font-weight: 900;
+                        }
 .page .for-me .info p{
       width: 310px;
       font-weight: 600;
