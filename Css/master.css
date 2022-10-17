@@ -12,7 +12,15 @@
 }
 /* End rule code */
 /* Frame Work */
-
+      * input{
+            border: none;
+            outline: none;
+      }
+      * textarea{
+            border: none;
+                  outline: none;
+                  resize: none;
+      }
 /* End Frame Work */
 *
 {
@@ -363,6 +371,93 @@ content: '';
 }
 }
 /* End Content */
+/* Start Contact */
+.page .contact{
+      margin-top: 300px;
+}
+.page .contact > h2::before {
+      content: '';
+      position: absolute;
+      background: #000;
+      width: 80px;
+      height: 2px;
+      top: 140%;
+      transform: translateX(10%);
+      /* -webkit-transform:;
+      -moz-transform:;
+      -ms-transform:;
+      -o-transform:; */
+}
+
+.page .contact > h2::after {
+      outline: 1px solid #000;
+      content: '';
+      position: absolute;
+      background: red;
+      background: #fff;
+      width: 10px;
+      height: 10px;
+      top: 35px;
+      border-radius: 50%;
+      transform: translateX(-46px);
+      -webkit-transform: translateX(-46px);
+      -moz-transform: translateX(-46px);
+      -ms-transform: translateX(-46px);
+      -o-transform: translateX(-46px);
+}
+.page .contact input.text-me{
+      border: 2px solid #ccc;
+      width: 40%;
+      margin-top: 50px;
+      padding: 5px;
+}
+.page .contact input.text-me:focus{
+      border: 2px solid var(--blue-color);
+}
+.page .contact input.text-me:focus::placeholder{
+      opacity: 0;
+}
+
+.page .contact input.num-me{
+      border: 2px solid #ccc;
+      width: 40%;
+      margin-top: 20px;
+      padding: 5px;
+}
+.page .contact input.num-me:focus{
+      border: 2px solid var(--blue-color);
+}
+.page .contact input.num-me:focus::placeholder{
+      opacity: 0;
+}
+.page .contact textarea.txt-me{
+      border: 2px solid #ccc;
+      width: 40%;
+      margin-top: 20px;
+      padding: 5px;
+}
+.page .contact textarea.txt-me:focus{
+      border: 2px solid var(--blue-color);
+}
+.page .contact textarea.txt-me:focus::placeholder{
+      opacity: 0;
+}
+.page .contact form button{
+      background-color: var(--blue-color);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      margin-right: 35%;
+      margin-top: 5px;
+      transition: 0.4s;
+      -webkit-transition: 0.4s;
+      -moz-transition: 0.4s;
+      -ms-transition: 0.4s;
+      -o-transition: 0.4s;
+}
+.page .contact form button:hover{
+      background-color: var(--blue-alt-color);
+}
 /* Media */
 @media (max-width:320px){
       .page .header > div{
@@ -375,13 +470,16 @@ content: '';
       .page .content .land{
             /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
       }
-                        .page .content .in {
-                              margin-left: 40px;
-                              margin-right: 40px;
-                        }
+            .page .content .in {
+                  margin-left: 40px;
+                  margin-right: 40px;
+            }
+.page .contact form button {
+      margin-right: 60%;
 }
-@media (min-width:321px) and (max-width: 375px){
-      /* .page .content .in {
+      }
+      @media (min-width:321px) and (max-width: 375px){
+            /* .page .content .in {
                   margin-left: 45px;
                   margin-right: 45px;
             } */
@@ -389,15 +487,21 @@ content: '';
                                           margin-left: 70px;
                                           margin-right: 70px;
                                     } 
-}
-@media (max-width:375px){
-
-}
-@media (min-width: 376px) and (max-width: 425px){
-      .page .content .land .in {
-                  margin-left: 95px;
+                              .page .contact form button {
+                                    margin-right: 63%;
+                              }
+                              }
+                              @media (max-width:375px){
+                                    
+                              }
+                              @media (min-width: 376px) and (max-width: 425px){
+                                    .page .content .land .in {
+                                          margin-left: 95px;
                   margin-right: 95px;
             }
+                                                            .page .contact form button {
+                                                                  margin-right: 64%;
+                                                            }
 }
 @media (max-width:425px){
       .page .header{
@@ -408,12 +512,12 @@ content: '';
       .page .header .info{
             padding-left: 5px;
       }
-                        .page .for-me .info {
-                              transform: translateY(25%);
-                              -webkit-transform: translateY(25%);
-                              -moz-transform: translateY(25%);
-                              -ms-transform: translateY(25%);
-                              -o-transform: translateY(25%);
+.page .for-me .info {
+      transform: translateY(25%);
+      -webkit-transform: translateY(25%);
+      -moz-transform: translateY(25%);
+      -ms-transform: translateY(25%);
+      -o-transform: translateY(25%);
 }
 .page .content .land{
       flex-direction: column;
@@ -421,7 +525,16 @@ content: '';
 .page .content .land .im{
       margin-left: 0;
 }
-
+            .page .contact input.text-me,
+            .page .contact input.num-me,
+            .page .contact textarea.txt-me {
+                  width: 80%;
+            }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+                                                                  .page .contact form button {
+                                                                              margin-right: 31%;
+                                                                        }
 }
 @media (min-width: 767px){
       .page .for-me .info{
